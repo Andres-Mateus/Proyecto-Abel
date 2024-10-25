@@ -1,0 +1,62 @@
+/* Estilo del título principal "CONSEJOS" */
+.consejos-title {
+    font-family: 'Poppins', sans-serif;
+    color: #01579b; /* Azul oscuro */
+    font-size: 3rem; /* Título grande y llamativo */
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Estilos de las secciones con fondos de colores diferentes */
+.salud-basica-section {
+    background-color: #f5f5f5; /* Gris más claro */
+    border-radius: 12px; /* Esquinas redondeadas */
+    padding: 20px;
+    max-width: 75%; /* Reducir el ancho de esta sección a 75% */
+    margin: 0 auto; /* Centrar la sección */
+}
+
+.estado-fisico-section {
+    background-color: #c8e6c9; /* Verde claro */
+    border-radius: 12px; /* Esquinas redondeadas */
+    padding: 20px;
+    max-width: 75%; /* Mantener el mismo ancho */
+    margin: 0 auto; /* Centrar la sección */
+}
+
+.salud-mental-section {
+    background-color: #bbdefb; /* Azul claro */
+    border-radius: 12px; /* Esquinas redondeadas */
+    padding: 20px;
+    max-width: 75%; /* Mantener el mismo ancho */
+    margin: 0 auto; /* Centrar la sección */
+}
+
+/* Estilo de los títulos de las secciones */
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem; /* Aumentar el tamaño del título de la sección */
+    font-weight: 600; /* Cambiar a un estilo más amigable */
+    color: #0288d1; /* Azul intermedio */
+    margin-bottom: 15px;
+    text-align: center; /* Centramos el texto */
+}
+
+/* Estilo de los consejos */
+ul {
+    list-style-type: none; /* Eliminamos el estilo de lista por defecto */
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.2rem; /* Aumentar el tamaño del texto de los consejos */
+    font-family: 'Arial', sans-serif; /* Cambiamos a un tipo de letra más amigable */
+}
+
+ul li::before {
+    content: "*"; /* Agregar el asterisco antes de cada consejo */
+    color: #0288d1; /* Azul intermedio */
+    margin-right: 8px;
+    font-weight: bold;
+}

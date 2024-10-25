@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthOfficeNet - Cuestionario de Salud</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Poppins y Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Favicon (Icono de la pestaña) -->
+    <link rel="icon" href="Imagenes/Logo.png" type="image/png">
+    <!-- Archivo CSS personalizado -->
+    <link href="Loginstyles.css" rel="stylesheet">
+    <!-- Archivo CSS para los estilos adicionales del cuestionario -->
+    <link href="QuestionnaireStyles.css" rel="stylesheet">
+    <script src="QuestionnaireScript.js" defer></script>
+</head>
+<body>
+    <!-- Encabezado de la aplicación -->
+    <nav class="navbar navbar-expand-lg justify-content-center">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="Imagenes/logo.png" alt="Logo Salud" class="logo-img">
+            <span class="ml-2">HealthOfficeNet</span>
+        </a>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="col-md-8 mx-auto">
+            <h2 class="text-center">Cuestionario de Salud</h2>
+            <form id="health-form">
+                <!-- Sección SALUD BÁSICA -->
+                <h4 class="mt-4 section-title">SALUD BÁSICA</h4>
+                <div class="form-group">
+                    <label for="horas-sentado">1. ¿Cuántas horas al día pasas sentado trabajando? (Indica el número de horas)</label>
+                    <input type="number" class="form-control" id="horas-sentado" placeholder="Ingresa las horas" required>
+                </div>
+                <div class="form-group">
+                    <label for="edad">2. ¿Cuál es tu edad actual? (Indica tu edad en años)</label>
+                    <input type="number" class="form-control" id="edad" placeholder="Ingresa tu edad" required>
+                </div>
+                <div class="form-group">
+                    <label for="peso">3. ¿Cuál es tu peso actual? (Indica tu peso en kilogramos)</label>
+                    <input type="number" class="form-control" id="peso" placeholder="Ingresa tu peso en kilogramos" required>
+                </div>
+                <div class="form-group">
+                    <label for="altura">4. ¿Cuál es tu altura? (Indica tu altura en centímetros)</label>
+                    <input type="number" class="form-control" id="altura" placeholder="Ingresa tu altura en centímetros" required>
+                </div>
+                <div class="form-group">
+                    <label for="horas-sueno">5. ¿Cuántas horas duermes cada noche? (Indica el número de horas)</label>
+                    <input type="number" class="form-control" id="horas-sueno" placeholder="Ingresa las horas de sueño" required>
+                </div>
+
+                <!-- Sección ESTADO FÍSICO -->
+                <h4 class="mt-4 section-title">ESTADO FÍSICO</h4>
+                <div class="form-group">
+                    <label for="estres">6. ¿Cómo percibes tu nivel de estrés en la vida diaria? (Selecciona un nivel)</label>
+                    <select class="form-control" id="estres" required>
+                        <option>Bajo</option>
+                        <option>Moderado</option>
+                        <option>Alto</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="agua">7. ¿Cuánto agua consumes diariamente? (Indica el número de vasos)</label>
+                    <select class="form-control" id="agua" required>
+                        <option>Bajo (menos de 5 vasos)</option>
+                        <option>Moderado (5-8 vasos)</option>
+                        <option>Alto (más de 8 vasos)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="actividad-fisica">8. ¿Con qué frecuencia realizas actividad física? (Selecciona un nivel)</label>
+                    <select class="form-control" id="actividad-fisica" required>
+                        <option>Bajo (menos de 2 días a la semana)</option>
+                        <option>Moderado (2-4 días a la semana)</option>
+                        <option>Alto (más de 4 días a la semana)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dolores-musculares">9. ¿Con qué frecuencia experimentas dolores o molestias musculares? (Selecciona un nivel)</label>
+                    <select class="form-control" id="dolores-musculares" required>
+                        <option>Bajo (rara vez)</option>
+                        <option>Moderado (ocasionalmente)</option>
+                        <option>Alto (frecuentemente)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="postura">10. ¿Cómo describirías tu postura durante el trabajo? (Selecciona un nivel)</label>
+                    <select class="form-control" id="postura" required>
+                        <option>Buena</option>
+                        <option>Regular</option>
+                        <option>Mala</option>
+                    </select>
+                </div>
+
+                <!-- Sección SALUD MENTAL -->
+                <h4 class="mt-4 section-title">SALUD MENTAL</h4>
+                <div class="form-group">
+                    <label for="ansiedad">11. ¿Cómo evaluarías tu nivel de ansiedad en la vida diaria? (Selecciona un nivel)</label>
+                    <select class="form-control" id="ansiedad" required>
+                        <option>Bajo</option>
+                        <option>Moderado</option>
+                        <option>Alto</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pausas">12. ¿Con qué frecuencia tomas pausas durante el trabajo? (Selecciona un nivel)</label>
+                    <select class="form-control" id="pausas" required>
+                        <option>Pocas (cada 2 horas o más)</option>
+                        <option>Moderadas (cada 1-2 horas)</option>
+                        <option>Frecuentes (cada 60 minutos)</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="interaccion-social">13. ¿Cuánta interacción social tienes durante el día? (Selecciona un nivel)</label>
+                    <select class="form-control" id="interaccion-social" required>
+                        <option>Poca</option>
+                        <option>Moderada</option>
+                        <option>Alta</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fatiga">14. ¿Qué tan frecuente sientes fatiga mental? (Selecciona un nivel)</label>
+                    <select class="form-control" id="fatiga" required>
+                        <option>Baja</option>
+                        <option>Moderada</option>
+                        <option>Alta</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="concentracion">15. ¿Cómo calificarías tu capacidad de concentración en las tareas diarias? (Selecciona un nivel)</label>
+                    <select class="form-control" id="concentracion" required>
+                        <option>Buena</option>
+                        <option>Moderada</option>
+                        <option>Baja</option>
+                    </select>
+                </div>
+
+                <!-- Botón para enviar el cuestionario -->
+                <button type="submit" class="btn btn-primary btn-block small-btn mt-4">Enviar Cuestionario</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="QuestionnaireScript.js"></script>
+</body>
+</html>

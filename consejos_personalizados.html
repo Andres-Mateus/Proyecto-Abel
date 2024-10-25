@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthOfficeNet - Consejos Personalizados</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Poppins y Roboto -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- Favicon (Icono de la pestaña) -->
+    <link rel="icon" href="Imagenes/Logo.png" type="image/png">
+    <!-- Archivo CSS personalizado -->
+    <link href="Loginstyles.css" rel="stylesheet">
+    <!-- Archivo CSS para los estilos de consejos -->
+    <link href="ConsejosStyles.css" rel="stylesheet">
+    <!-- Archivo JavaScript para manejar la lógica de los consejos -->
+    <script src="ConsejosScript.js" defer></script>
+</head>
+<body>
+    <!-- Encabezado de la aplicación -->
+    <nav class="navbar navbar-expand-lg justify-content-center">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="Imagenes/logo.png" alt="Logo Salud" class="logo-img">
+            <span class="ml-2">HealthOfficeNet</span>
+        </a>
+    </nav>
+
+    <!-- Título principal "CONSEJOS" -->
+    <div class="container text-center mt-5">
+        <h1 class="consejos-title">CONSEJOS</h1>
+    </div>
+
+    <!-- Sección de consejos -->
+    <div class="container mt-4">
+        <div class="salud-basica-section p-4">
+            <h4 class="section-title">SALUD BÁSICA</h4>
+            <ul id="consejos-salud-basica"></ul>
+        </div>
+        <div class="estado-fisico-section mt-4 p-4">
+            <h4 class="section-title">ESTADO FÍSICO</h4>
+            <ul id="consejos-estado-fisico"></ul>
+        </div>
+        <div class="salud-mental-section mt-4 p-4">
+            <h4 class="section-title">SALUD MENTAL</h4>
+            <ul id="consejos-salud-mental"></ul>
+        </div>
+    </div>
+
+    <!-- Botón para volver al cuestionario -->
+    <div class="container text-center mt-4">
+        <a href="cuestionario.html" class="btn btn-primary small-btn">Volver al Cuestionario</a>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
